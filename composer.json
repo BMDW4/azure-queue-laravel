@@ -1,5 +1,5 @@
 {
-  "name": "squigg/azure-queue-laravel",
+  "name": "bmdw4/azure-queue-laravel",
   "description": "Laravel Queue Driver for Microsoft Azure Storage Queue",
   "keywords": [
     "laravel",
