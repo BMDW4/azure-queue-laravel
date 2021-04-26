@@ -136,6 +136,10 @@ class AzureJob extends Job implements JobContract
      */
     public function getRawBody()
     {
-        return $this->job->getMessageText();
+        if(env('AZURE_BASE64_ENCODE')) {
+            return base64_decode($this->job->getMessageText());
+        } else {
+            return $this->job->getMessageText();
+        }
     }
 }
